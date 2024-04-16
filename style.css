@@ -12,12 +12,15 @@ body {
 }
 header {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 	background-color: #333;
 	color: #fff;
 	padding: 20px;
 	text-align: center;
+	position: fixed;
+	width: 100%;
+	top: 0;
 }
 
 header img
@@ -34,10 +37,8 @@ section {
 
 	padding: 20px;
 	background-color: #f0f0f0;
-	margin-top: 20px;
-	margin-left: 100px;
-	margin-right: 100px;
-	margin-bottom: 30px;
+
+	margin: 150px 500px 20px 500px;
 }
 
 section img
@@ -63,6 +64,24 @@ footer {
 	bottom: 0;
 }
 
+@media all and (max-width: 1000px) 
+{
+	header
+	{
+		position: relative;
+	}
+
+	header h1 {
+		margin-right: 30px;
+	}
+	
+	section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;	
+		margin: 20px 100px 20px 100px;
+	}
+}
 
 @media all and (max-width: 500px) 
 {
